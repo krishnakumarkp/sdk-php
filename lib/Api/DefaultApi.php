@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Person\Client
+ * @package  PersonClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Person\Client\Api;
+namespace PersonClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Person\Client\ApiException;
-use Person\Client\Configuration;
-use Person\Client\HeaderSelector;
-use Person\Client\ObjectSerializer;
+use PersonClient\ApiException;
+use PersonClient\Configuration;
+use PersonClient\HeaderSelector;
+use PersonClient\ObjectSerializer;
 
 /**
  * DefaultApi Class Doc Comment
  *
  * @category Class
- * @package  Person\Client
+ * @package  PersonClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -121,9 +121,9 @@ class DefaultApi
      * List all people
      *
      *
-     * @throws \Person\Client\ApiException on non-2xx response
+     * @throws \PersonClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return object[]|\Person\Client\Model\AuthError|\Person\Client\Model\Error
+     * @return object[]|\PersonClient\Model\AuthError|\PersonClient\Model\Error
      */
     public function personGet()
     {
@@ -137,9 +137,9 @@ class DefaultApi
      * List all people
      *
      *
-     * @throws \Person\Client\ApiException on non-2xx response
+     * @throws \PersonClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of object[]|\Person\Client\Model\AuthError|\Person\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of object[]|\PersonClient\Model\AuthError|\PersonClient\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function personGetWithHttpInfo()
     {
@@ -188,26 +188,26 @@ class DefaultApi
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\Person\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\PersonClient\Model\AuthError' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Person\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\PersonClient\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\Person\Client\Model\Error' === '\SplFileObject') {
+                    if ('\PersonClient\Model\Error' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Person\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\PersonClient\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -240,7 +240,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Person\Client\Model\AuthError',
+                        '\PersonClient\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class DefaultApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Person\Client\Model\Error',
+                        '\PersonClient\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -417,9 +417,9 @@ class DefaultApi
      *
      * Create a person
      *
-     * @param  \Person\Client\Model\Person $person Person to add (required)
+     * @param  \PersonClient\Model\Person $person Person to add (required)
      *
-     * @throws \Person\Client\ApiException on non-2xx response
+     * @throws \PersonClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -433,9 +433,9 @@ class DefaultApi
      *
      * Create a person
      *
-     * @param  \Person\Client\Model\Person $person Person to add (required)
+     * @param  \PersonClient\Model\Person $person Person to add (required)
      *
-     * @throws \Person\Client\ApiException on non-2xx response
+     * @throws \PersonClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -478,7 +478,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Person\Client\Model\AuthError',
+                        '\PersonClient\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -486,7 +486,7 @@ class DefaultApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Person\Client\Model\Error',
+                        '\PersonClient\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -501,7 +501,7 @@ class DefaultApi
      *
      * Create a person
      *
-     * @param  \Person\Client\Model\Person $person Person to add (required)
+     * @param  \PersonClient\Model\Person $person Person to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -521,7 +521,7 @@ class DefaultApi
      *
      * Create a person
      *
-     * @param  \Person\Client\Model\Person $person Person to add (required)
+     * @param  \PersonClient\Model\Person $person Person to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -557,7 +557,7 @@ class DefaultApi
     /**
      * Create request for operation 'personPost'
      *
-     * @param  \Person\Client\Model\Person $person Person to add (required)
+     * @param  \PersonClient\Model\Person $person Person to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
