@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Person/Client
+ * @package  Person\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Person/Client;
+namespace Person\Client;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description AuthError
- * @package     Person/Client
+ * @package     Person\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

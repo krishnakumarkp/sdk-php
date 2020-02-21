@@ -1,4 +1,4 @@
-# Person/Client\DefaultApi
+# Person\Client\DefaultApi
 
 All URIs are relative to *http://192.168.100.25/apikey_auth_jwt*
 
@@ -23,10 +23,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: bearerAuth
-$config = Person/Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Person\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Person/Client\Api\DefaultApi(
+$apiInstance = new Person\Client\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -78,16 +78,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: bearerAuth
-$config = Person/Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Person\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Person/Client\Api\DefaultApi(
+$apiInstance = new Person\Client\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$person = new \Person/Client\Model\Person(); // \Person/Client\Model\Person | Person to add
+$person = new \Person\Client\Model\Person(); // \Person\Client\Model\Person | Person to add
 
 try {
     $apiInstance->personPost($person);
@@ -102,7 +102,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | [**\Person/Client\Model\Person**](../Model/Person.md)| Person to add |
+ **person** | [**\Person\Client\Model\Person**](../Model/Person.md)| Person to add |
 
 ### Return type
 
