@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PersonClient
+ * @package  Person\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PersonClient\Model;
+namespace Person\Client\Model;
 
 use \ArrayAccess;
-use \PersonClient\ObjectSerializer;
+use \Person\Client\ObjectSerializer;
 
 /**
  * Error Class Doc Comment
  *
  * @category Class
- * @package  PersonClient
+ * @package  Person\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

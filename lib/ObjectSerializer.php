@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PersonClient
+ * @package  Person\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,15 +27,15 @@
  * Do not edit the class manually.
  */
 
-namespace PersonClient;
+namespace Person\Client;
 
-use PersonClient\Model\ModelInterface;
+use Person\Client\Model\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  PersonClient
+ * @package  Person\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -325,7 +325,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\PersonClient\Model\\' . $data->{$discriminator};
+                $subclass = '\Person\Client\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

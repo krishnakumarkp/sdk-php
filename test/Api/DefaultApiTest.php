@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PersonClient
+ * @package  Person\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace PersonClient;
+namespace Person\Client;
 
-use \PersonClient\Configuration;
-use \PersonClient\ApiException;
-use \PersonClient\ObjectSerializer;
+use \Person\Client\Configuration;
+use \Person\Client\ApiException;
+use \Person\Client\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * DefaultApiTest Class Doc Comment
  *
  * @category Class
- * @package  PersonClient
+ * @package  Person\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PersonClient\Model
+ * @package  Person\Client\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace PersonClient\Model;
+namespace Person\Client\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package PersonClient\Model
+ * @package Person\Client\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface
