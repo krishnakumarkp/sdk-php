@@ -112,4 +112,11 @@ class PersonTest extends TestCase
     public function testPropertySecondparentId()
     {
     }
+
+    /**
+     * Test attribute "metadata"
+     */
+    public function testPropertyMetadata()
+    {
+    }
 }

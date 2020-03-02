@@ -61,7 +61,8 @@ class Person implements ModelInterface, ArrayAccess
         'firstname' => 'string',
         'lastname' => 'string',
         'firstparent_id' => 'string',
-        'secondparent_id' => 'string'
+        'secondparent_id' => 'string',
+        'metadata' => 'AnyOfMapMapMap'
     ];
 
     /**
@@ -74,7 +75,8 @@ class Person implements ModelInterface, ArrayAccess
         'firstname' => null,
         'lastname' => null,
         'firstparent_id' => null,
-        'secondparent_id' => null
+        'secondparent_id' => null,
+        'metadata' => null
     ];
 
     /**
@@ -108,7 +110,8 @@ class Person implements ModelInterface, ArrayAccess
         'firstname' => 'firstname',
         'lastname' => 'lastname',
         'firstparent_id' => 'firstparent_id',
-        'secondparent_id' => 'secondparent_id'
+        'secondparent_id' => 'secondparent_id',
+        'metadata' => 'metadata'
     ];
 
     /**
@@ -121,7 +124,8 @@ class Person implements ModelInterface, ArrayAccess
         'firstname' => 'setFirstname',
         'lastname' => 'setLastname',
         'firstparent_id' => 'setFirstparentId',
-        'secondparent_id' => 'setSecondparentId'
+        'secondparent_id' => 'setSecondparentId',
+        'metadata' => 'setMetadata'
     ];
 
     /**
@@ -134,7 +138,8 @@ class Person implements ModelInterface, ArrayAccess
         'firstname' => 'getFirstname',
         'lastname' => 'getLastname',
         'firstparent_id' => 'getFirstparentId',
-        'secondparent_id' => 'getSecondparentId'
+        'secondparent_id' => 'getSecondparentId',
+        'metadata' => 'getMetadata'
     ];
 
     /**
@@ -202,6 +207,7 @@ class Person implements ModelInterface, ArrayAccess
         $this->container['lastname'] = isset($data['lastname']) ? $data['lastname'] : null;
         $this->container['firstparent_id'] = isset($data['firstparent_id']) ? $data['firstparent_id'] : null;
         $this->container['secondparent_id'] = isset($data['secondparent_id']) ? $data['secondparent_id'] : null;
+        $this->container['metadata'] = isset($data['metadata']) ? $data['metadata'] : null;
     }
 
     /**
@@ -350,6 +356,30 @@ class Person implements ModelInterface, ArrayAccess
     public function setSecondparentId($secondparent_id)
     {
         $this->container['secondparent_id'] = $secondparent_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets metadata
+     *
+     * @return AnyOfMapMapMap|null
+     */
+    public function getMetadata()
+    {
+        return $this->container['metadata'];
+    }
+
+    /**
+     * Sets metadata
+     *
+     * @param AnyOfMapMapMap|null $metadata metadata
+     *
+     * @return $this
+     */
+    public function setMetadata($metadata)
+    {
+        $this->container['metadata'] = $metadata;
 
         return $this;
     }
