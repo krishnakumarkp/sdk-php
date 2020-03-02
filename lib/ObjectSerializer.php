@@ -324,7 +324,7 @@ class ObjectSerializer
             $data = is_string($data) ? json_decode($data) : $data;
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
-			echo "i am here";
+			echo "i am here", $class;
 			print_r($discriminator);
 			exit();
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
