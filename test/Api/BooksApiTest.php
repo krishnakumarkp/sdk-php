@@ -1,6 +1,6 @@
 <?php
 /**
- * DefaultApiTest
+ * BooksApiTest
  * PHP version 5
  *
  * @category Class
@@ -33,14 +33,14 @@ use \Bookstore\Client\ApiException;
 use \Bookstore\Client\ObjectSerializer;
 
 /**
- * DefaultApiTest Class Doc Comment
+ * BooksApiTest Class Doc Comment
  *
  * @category Class
  * @package  Bookstore\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DefaultApiTest extends \PHPUnit_Framework_TestCase
+class BooksApiTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -72,42 +72,12 @@ class DefaultApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for addBook
+     * Test case for listBooks
      *
-     * Creates a new book.
-     *
-     */
-    public function testAddBook()
-    {
-    }
-
-    /**
-     * Test case for deleteBook
-     *
-     * .
+     * List of books.
      *
      */
-    public function testDeleteBook()
-    {
-    }
-
-    /**
-     * Test case for findBook
-     *
-     * get book by id.
-     *
-     */
-    public function testFindBook()
-    {
-    }
-
-    /**
-     * Test case for updateBook
-     *
-     * .
-     *
-     */
-    public function testUpdateBook()
+    public function testListBooks()
     {
     }
 }
