@@ -62,12 +62,12 @@ $apiInstance = new Bookstore\Client\Api\BooksApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
+$newbook = new \Bookstore\Client\Model\Newbook(); // \Bookstore\Client\Model\Newbook | Book to add to the store
 
 try {
-    $result = $apiInstance->listBooks();
-    print_r($result);
+    $apiInstance->addBook($newbook);
 } catch (Exception $e) {
-    echo 'Exception when calling BooksApi->listBooks: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling BooksApi->addBook: ', $e->getMessage(), PHP_EOL;
 }
 
 ?>
@@ -79,11 +79,11 @@ All URIs are relative to *http://192.168.100.10:8080/api/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*BooksApi* | [**listBooks**](docs/Api/BooksApi.md#listbooks) | **GET** /books | List of books
-*DefaultApi* | [**addBook**](docs/Api/DefaultApi.md#addbook) | **POST** /books | Creates a new book
-*DefaultApi* | [**deleteBook**](docs/Api/DefaultApi.md#deletebook) | **DELETE** /books/{id} | 
-*DefaultApi* | [**findBook**](docs/Api/DefaultApi.md#findbook) | **GET** /books/{id} | get book by id
-*DefaultApi* | [**updateBook**](docs/Api/DefaultApi.md#updatebook) | **PUT** /books/{id} | 
+*BooksApi* | [**addBook**](docs/Api/BooksApi.md#addbook) | **POST** /books | Creates a new book
+*BooksApi* | [**deleteBook**](docs/Api/BooksApi.md#deletebook) | **DELETE** /books/{id} | 
+*BooksApi* | [**findBook**](docs/Api/BooksApi.md#findbook) | **GET** /books/{id} | get book by id
+*BooksApi* | [**listBook**](docs/Api/BooksApi.md#listbook) | **GET** /books | List of books
+*BooksApi* | [**updateBook**](docs/Api/BooksApi.md#updatebook) | **PUT** /books/{id} | 
 
 
 ## Documentation For Models

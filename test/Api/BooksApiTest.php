@@ -72,12 +72,52 @@ class BooksApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for listBooks
+     * Test case for addBook
+     *
+     * Creates a new book.
+     *
+     */
+    public function testAddBook()
+    {
+    }
+
+    /**
+     * Test case for deleteBook
+     *
+     * .
+     *
+     */
+    public function testDeleteBook()
+    {
+    }
+
+    /**
+     * Test case for findBook
+     *
+     * get book by id.
+     *
+     */
+    public function testFindBook()
+    {
+    }
+
+    /**
+     * Test case for listBook
      *
      * List of books.
      *
      */
-    public function testListBooks()
+    public function testListBook()
+    {
+    }
+
+    /**
+     * Test case for updateBook
+     *
+     * .
+     *
+     */
+    public function testUpdateBook()
     {
     }
 }
